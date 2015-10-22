@@ -4,6 +4,7 @@
  * @author Kevin Schoergnhofer
  * @author Markus Seiwald
  */
+ 
 public interface MyStack<T> {
 
 	/**
@@ -12,14 +13,14 @@ public interface MyStack<T> {
 	 * @param t
 	 *            generic item
 	 */
-	public void push(T t);
+	public void push(T t) throws FullStackException;
 
 	/**
 	 * get an item from the stack
 	 * 
 	 * @return returns the last item added
 	 */
-	public T pop();
+	public T pop() throws EmptyStackException;
 
 	/**
 	 * 

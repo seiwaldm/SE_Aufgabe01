@@ -42,16 +42,13 @@ public class RPN {
 				double a = (double) stack.pop();
 				double c = a / b;
 				stack.push(c);
+         } else if (i == args.length - 1) {
+            throw new InvalidInputStreamException("Last element of the input must be an operator!");   
 			} else {
 				double value = Double.parseDouble(args[i]);
 				stack.push(value);
 			}
 		}
 		return (double) stack.pop();
-		/*
-		 * TODO: wenn am Ende des Inputs kein Operator steht, 
-		 * soll eine Exception geworfen werden... asonsten gibt der RPN 
-		 * ein falsches Ergebnis zurück!
-		 */
 	}
 }

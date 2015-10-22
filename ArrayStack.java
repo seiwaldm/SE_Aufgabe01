@@ -15,16 +15,16 @@ public class ArrayStack<T> implements MyStack<T> {
 		this.stack = new Object[size];
 	}
 
-	public void push(T t) {
+	public void push(T t) throws FullStackException {
 		if (position > stack.length - 1)
-			throw new IndexOutOfBoundsException("Kein Platz auf dem Stack verfuegbar");
+			throw new FullStackException("There is no free space left on the stack");
 		stack[position] = t;
 		position++;
 	}
 
-	public T pop() {
+	public T pop() throws EmptyStackException {
 		if (position < 1)
-			throw new IndexOutOfBoundsException("Keine Elemente auf dem Stack verfuegbar");
+			throw new EmptyStackException("There are no elements left on the stack");
 		position--;
 		return (T) stack[position];
 	}

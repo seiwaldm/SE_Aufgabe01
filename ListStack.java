@@ -22,7 +22,9 @@ public class ListStack<T> implements MyStack<T> {
 	}
 
 	@Override
-	public T pop() {
+	public T pop() throws EmptyStackException {
+      if (head == null)
+         throw new EmptyStackException("There are no elements left on the stack");
 		T pop = this.head.value;
 		this.head = this.head.next;
 		return pop;
