@@ -18,7 +18,6 @@ public class DemoRPN {
 	 *            input Strings for the RPN
 	 */
 	public static void main(String[] inputForRPN) {
-		// TODO Auto-generated method stub
 		// ask user which kind of stack to create
 		Scanner scan = new Scanner(System.in);
 		String input_selectStackType = "";
