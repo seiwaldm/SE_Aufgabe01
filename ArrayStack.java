@@ -1,6 +1,9 @@
 /**
- * PS Software Engineering WS2015 <br><br>
- *
+ * PS Software Engineering WS2015 <br>
+ * <br>
+ * 
+ * implementation of a LIFO-stack based on an array
+ * 
  * @author Kevin Schoergnhofer
  * @author Markus Seiwald
  *

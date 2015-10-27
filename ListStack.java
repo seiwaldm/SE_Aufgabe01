@@ -8,6 +8,7 @@
  * @author Markus Seiwald
  *
  */
+ 
 public class ListStack<T> implements MyStack<T> {
 
 	private Entry head;

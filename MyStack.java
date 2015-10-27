@@ -1,8 +1,12 @@
 /**
  * PS Software Engineering WS2015 <br>
- * <br> 
+ * <br>
+ * 
+ * implementation of a stack interface
+ * 
  * @author Kevin Schoergnhofer
  * @author Markus Seiwald
+ *
  */
  
 public interface MyStack<T> {
@@ -23,7 +27,6 @@ public interface MyStack<T> {
 	public T pop() throws EmptyStackException;
 
 	/**
-	 * 
 	 * get the size of the stack
 	 * 
 	 * @return returns the number of elements on the stack
